@@ -33,7 +33,7 @@ class Artist
   end
 
   def self.create_by_name(name)
-    Artist.new(name) = self.artist
-    self.save
+    self.new(name) = song
+    song.save
   end
 end
