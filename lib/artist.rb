@@ -33,6 +33,6 @@ class Artist
   end
 
   def self.create_by_name(name)
-    self.new(name).all?{|artist| artist}
+    self.new(name).select{|artist| artist.save}
   end
 end
