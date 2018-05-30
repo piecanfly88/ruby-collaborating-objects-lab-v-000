@@ -7,6 +7,7 @@ class Song
 
   def self.new_by_filename(filename)
     artist, song = filename.split(" - ")
-    song = self.new(filename)
+    new_song = self.new(song)
+    new_song.artist = artist
   end
 end
