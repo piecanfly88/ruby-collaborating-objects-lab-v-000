@@ -38,5 +38,5 @@ class Artist
 
   def print_songs
     songs.foreach{|song| puts song.name}
-
+  end
 end
